@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout_location_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@android:color/white"
+    android:elevation="@dimen/layout_elevation"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:minHeight="@dimen/location_list_Item_layout_height"
+    android:orientation="horizontal">
+
+
+    <include
+        android:id="@+id/common_layout"
+        layout="@layout/common_location_layout" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_evses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/common_layout"
+        android:dividerHeight="@dimen/divider_height"
+        android:orientation="horizontal"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ChargingStations</string>
+    <string name="power_unit">kW</string>
+</resources>

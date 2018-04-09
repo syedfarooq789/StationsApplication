@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_elevation">1dp</dimen>
+
+    <dimen name="margin_extra_small">3dp</dimen>
+    <dimen name="margin_default">12dp</dimen>
+    <dimen name="margin_normal">22dp</dimen>
+    <dimen name="margin_large">33dp</dimen>
+    <dimen name="margin_extra_large">44dp</dimen>
+
+    <dimen name="padding_small">1.3dp</dimen>
+    <dimen name="padding_default">15dp</dimen>
+    <dimen name="padding_normal">25dp</dimen>
+    <dimen name="padding_large">35dp</dimen>
+    <dimen name="padding_extra_large">45dp</dimen>
+    <dimen name="padding_extra_large_xx">149dp</dimen>
+
+    <dimen name="location_list_tv_size">15sp</dimen>
+    <dimen name="location_list_Item_layout_height">48dp</dimen>
+
+    <dimen name="divider_height">26dp</dimen>
+
+    <dimen name="action_bar_size">85dp</dimen>
+</resources>

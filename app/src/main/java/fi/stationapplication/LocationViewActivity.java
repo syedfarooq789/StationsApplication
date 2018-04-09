@@ -7,6 +7,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import fi.stationapplication.adapter.EvseRecyclerViewAdapter;
@@ -24,7 +26,6 @@ public class LocationViewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_location_view);
-
         initializeUI();
         initializeData();
     }
@@ -47,6 +48,11 @@ public class LocationViewActivity extends AppCompatActivity {
         textViewLocationName = findViewById(R.id.text_view_location_name);
         textViewLatLng = findViewById(R.id.text_view_longitude_latitude);
         textViewCityName = findViewById(R.id.text_view_city_name);
+        setMarginsLinearLayout(textViewLocationName);
+        setMarginsLinearLayout(textViewCityName);
+        setMarginsRelativeLayout(textViewLatLng);
+
+
     }
 
     private void initializeData() {
@@ -75,4 +81,15 @@ public class LocationViewActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void setMarginsLinearLayout(TextView textView) {
+        LinearLayout.LayoutParams layoutParamsTextView = (LinearLayout.LayoutParams) textView.getLayoutParams();
+        layoutParamsTextView.setMargins(0, 0, 0, 0);
+        textView.setLayoutParams(layoutParamsTextView);
+    }
+
+    public void setMarginsRelativeLayout(TextView textView) {
+        RelativeLayout.LayoutParams layoutParamsTextView = (RelativeLayout.LayoutParams) textView.getLayoutParams();
+        layoutParamsTextView.setMargins(0, 0, 0, 0);
+        textView.setLayoutParams(layoutParamsTextView);
+    }
 }

@@ -31,7 +31,6 @@ public class EvseRecyclerViewAdapter extends RecyclerView.Adapter<EvseRecyclerVi
     @Override
     public void onBindViewHolder(@NonNull EvseRecyclerViewHolder holder, final int position) {
         final Evse evse = evseList.get(position);
-
         //showing the power of stations in textview
         if (evse.getConnectors() != null) {
             holder.textViewStationPower.setText(evse.getConnectors().get(0).getMaxKw().toString());

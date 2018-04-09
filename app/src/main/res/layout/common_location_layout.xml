@@ -22,8 +22,7 @@
             android:singleLine="true"
             android:textColor="@android:color/black"
             android:textSize="@dimen/location_list_tv_size"
-            android:textStyle="bold"
-            tools:text="location name" />
+            android:textStyle="bold" />
 
 
         <TextView
@@ -35,8 +34,7 @@
             android:layout_weight="1"
             android:ellipsize="end"
             android:gravity="end"
-            android:singleLine="true"
-            android:text="City" />
+            android:singleLine="true" />
 
     </LinearLayout>
 
